@@ -12,17 +12,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Widget titleSection = Container(
+    Widget titleSection = Container(  // Container Widget
       padding: const EdgeInsets.all(32),
-      child: Row(
+      child: Row( // Row Widget
         children: [
           Expanded(
             /*1*/
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+            child: Column(  // Column Widget
+              crossAxisAlignment: CrossAxisAlignment.start, // 置入起始位置
               children: [
                 /*2*/
-                Container(
+                Container(  // Container Widget
                   padding: const EdgeInsets.only(bottom: 8),
                   child: const Text(
                     'Oeschinen Lake Campground',
@@ -78,12 +78,12 @@ class MyApp extends StatelessWidget {
       title: 'Flutter layout demo',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Flutter layout demo'),
+          title: const Text('Layout Demo'),
         ),
         body: ListView(
           children: [
             Image.asset(
-              'images/lake.jpg',
+              'images/lake.jpg',  // 放入圖片
               width: 600,
               height: 240,
               fit: BoxFit.cover,
